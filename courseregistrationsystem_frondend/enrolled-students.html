@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled Students</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <h2>Course Registration System</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="register.html">Register</a>
+        <a href="enrolled-students.html">Enrolled Students</a>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="page-heading">
+        <div>
+            <p class="tagline">REGISTRATION RECORDS</p>
+            <h1>Enrolled Students</h1>
+            <p>View all registered students and their selected courses.</p>
+        </div>
+        <button class="btn" onclick="loadRegistrations()">Refresh</button>
+    </div>
+
+    <p id="registrationListMessage" class="message" aria-live="polite"></p>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Registration ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Course Name</th>
+                    <th>Registration Date</th>
+                </tr>
+            </thead>
+            <tbody id="registrationTable">
+                <tr>
+                    <td colspan="5">Loading registrations...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <p>Course Registration System</p>
+</footer>
+
+</body>
+</html>
